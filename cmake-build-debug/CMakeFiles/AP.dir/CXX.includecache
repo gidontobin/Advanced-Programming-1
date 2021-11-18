@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/projects/cpp/AP/timeseries.cpp
+timeseries.h
+C:/projects/cpp/AP/timeseries.h
+map
+-
+fstream
+-
+sstream
+-
+string
+-
+vector
+-
+
+C:/projects/cpp/AP/timeseries.h
+vector
+-
+map
+-
+string
+-
+

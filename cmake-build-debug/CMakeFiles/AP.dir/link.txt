@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\AP.dir/objects.a
+C:\Users\Toshiba\Desktop\mingw64\bin\ar.exe cr CMakeFiles\AP.dir/objects.a @CMakeFiles\AP.dir\objects1.rsp
+C:\Users\Toshiba\Desktop\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\AP.dir/objects.a -Wl,--no-whole-archive -o AP.exe -Wl,--out-implib,libAP.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\AP.dir\linklibs.rsp
