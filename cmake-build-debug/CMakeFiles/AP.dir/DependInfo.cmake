@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/projects/cpp/AP/SimpleAnomalyDetector.cpp" "C:/projects/cpp/AP/cmake-build-debug/CMakeFiles/AP.dir/SimpleAnomalyDetector.cpp.obj"
-  "C:/projects/cpp/AP/anomaly_detection_util.cpp" "C:/projects/cpp/AP/cmake-build-debug/CMakeFiles/AP.dir/anomaly_detection_util.cpp.obj"
-  "C:/projects/cpp/AP/main.cpp" "C:/projects/cpp/AP/cmake-build-debug/CMakeFiles/AP.dir/main.cpp.obj"
-  "C:/projects/cpp/AP/timeseries.cpp" "C:/projects/cpp/AP/cmake-build-debug/CMakeFiles/AP.dir/timeseries.cpp.obj"
+  "//wsl$/Ubuntu-20.04/home/gidon/Desktop/check/Advanced-Programming-1/SimpleAnomalyDetector.cpp" "//wsl$/Ubuntu-20.04/home/gidon/Desktop/check/Advanced-Programming-1/cmake-build-debug/CMakeFiles/AP.dir/SimpleAnomalyDetector.cpp.obj"
+  "//wsl$/Ubuntu-20.04/home/gidon/Desktop/check/Advanced-Programming-1/anomaly_detection_util.cpp" "//wsl$/Ubuntu-20.04/home/gidon/Desktop/check/Advanced-Programming-1/cmake-build-debug/CMakeFiles/AP.dir/anomaly_detection_util.cpp.obj"
+  "//wsl$/Ubuntu-20.04/home/gidon/Desktop/check/Advanced-Programming-1/main.cpp" "//wsl$/Ubuntu-20.04/home/gidon/Desktop/check/Advanced-Programming-1/cmake-build-debug/CMakeFiles/AP.dir/main.cpp.obj"
+  "//wsl$/Ubuntu-20.04/home/gidon/Desktop/check/Advanced-Programming-1/timeseries.cpp" "//wsl$/Ubuntu-20.04/home/gidon/Desktop/check/Advanced-Programming-1/cmake-build-debug/CMakeFiles/AP.dir/timeseries.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "MSVC")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

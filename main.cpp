@@ -10,7 +10,7 @@ using namespace std;
 int main() {
     TimeSeries ts("hi.txt");
     map<string, vector<float>> featuresMap = ts.getMap();
-    map<string, vector<float>>::iterator it = featuresMap.begin();
+    auto it = featuresMap.begin();
     for (; it != featuresMap.end(); it++) {
         cout << "feature " << it->first << ", values: ";
         for (float f : it->second)

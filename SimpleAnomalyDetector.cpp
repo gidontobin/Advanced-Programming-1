@@ -25,9 +25,9 @@ void SimpleAnomalyDetector::learnNormal(const TimeSeries& ts) {
     map<string, vector<float>>::iterator header;
     for (header = map_elements.begin(); header != map_elements.end(); header++) {
         float maxCor = 0;
-        string corTo = "";
+        string corTo;
 
-        map<string, vector<float>>::iterator next = header;
+        auto next = header;
         for (next++; next != map_elements.end(); next++) {
             float cor = pearson((header->second).data(), (next->second).data(), num_of_rows);
             if (cor < 0)
@@ -39,11 +39,11 @@ void SimpleAnomalyDetector::learnNormal(const TimeSeries& ts) {
             }
         }
 
-        if (corTo == "")
+        if (corTo.empty())
             continue;
 
 
-        Point **points = new Point *[num_of_rows];
+        auto **points = new Point *[num_of_rows];
         for (int i = 0; i < num_of_rows; i++) {
             points[i] = new Point(header->second.at(i), map_elements[corTo].at(i));
         }
@@ -83,10 +83,10 @@ void SimpleAnomalyDetector::learnNormal(const TimeSeries& ts) {
         int num_of_rows = ts.length();
 
         //check every pair that was found as cor in learnNormal function
-        for(correlatedFeatures corOfI : this->cf){
+        for(const correlatedFeatures& corOfI : this->cf){
 
             //make array of points
-            Point **points = new Point *[num_of_rows];
+            auto **points = new Point *[num_of_rows];
             for(int i = 0; i < num_of_rows; i++) {
                 points[i] = new Point(map_elements[corOfI.feature1].at(i),map_elements[corOfI.feature2].at(i));
             }
@@ -105,7 +105,7 @@ void SimpleAnomalyDetector::learnNormal(const TimeSeries& ts) {
             //check if point is really bad, and if so, add a report to the vector of reports
             if (maxDev>corOfI.corrlation){
                 const string des = corOfI.feature1 + "-" + corOfI.feature2;
-                AnomalyReport* ar = new AnomalyReport(des, badIndex);
+                auto* ar = new AnomalyReport(des, badIndex);
                 report.push_back(*ar);
             }
         }
