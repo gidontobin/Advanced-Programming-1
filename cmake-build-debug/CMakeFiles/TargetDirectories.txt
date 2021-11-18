@@ -1,3 +1,0 @@
-//wsl$/Ubuntu-20.04/home/gidon/Desktop/check/Advanced-Programming-1/cmake-build-debug/CMakeFiles/AP.dir
-//wsl$/Ubuntu-20.04/home/gidon/Desktop/check/Advanced-Programming-1/cmake-build-debug/CMakeFiles/edit_cache.dir
-//wsl$/Ubuntu-20.04/home/gidon/Desktop/check/Advanced-Programming-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
