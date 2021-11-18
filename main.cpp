@@ -8,7 +8,7 @@
 using namespace std;
 
 int main() {
-    TimeSeries ts("hi.csv");
+    TimeSeries ts("hi.txt");
     map<string, vector<float>> featuresMap = ts.getMap();
     auto it = featuresMap.begin();
     for (; it != featuresMap.end(); it++) {
